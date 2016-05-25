@@ -55,20 +55,3 @@ We appreciate any contribution and if a release is needed to be done on pypi,
 please just contact one of us `dev@bluedynamics dot com <mailto:dev@bluedynamics.com>`_
 
 Code is licensed under GPL v2.
-
-
-Changes
-=======
-
-1.1.dev0
---------
-
-- Support for python ``uuid`` module [jensens]
-
-- more generic ``basex`` base class and special ``basej`` class. [jensens]
-
-
-1.0
----
-
-- initial implementation [rnixx, jensens]
