@@ -1,20 +1,26 @@
-import unittest
-import doctest 
-from pprint import pprint
+# -*- coding: utf-8 -*-
 from interlude import interact
+from pprint import pprint
 
-optionflags = doctest.NORMALIZE_WHITESPACE | \
-              doctest.ELLIPSIS | \
-              doctest.REPORT_ONLY_FIRST_FAILURE
+import doctest
+import unittest
+
+
+optionflags = (
+    doctest.NORMALIZE_WHITESPACE |
+    doctest.ELLIPSIS |
+    doctest.REPORT_ONLY_FIRST_FAILURE
+)
 
 TESTFILES = [
-    'tests.txt',
+    'tests.rst',
 ]
+
 
 def test_suite():
     return unittest.TestSuite([
         doctest.DocFileSuite(
-            file, 
+            file,
             optionflags=optionflags,
             globs={'interact': interact,
                    'pprint': pprint},
@@ -22,4 +28,4 @@ def test_suite():
     ])
 
 if __name__ == '__main__':
-    unittest.main(defaultTest='test_suite')                 #pragma NO COVERAGE
+    unittest.main(defaultTest='test_suite')                # pragma NO COVERAGE
