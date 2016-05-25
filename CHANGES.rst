@@ -1,12 +1,14 @@
-Changes
+History
 =======
 
-1.1.dev0
---------
+1.1 (unreleased)
+----------------
 
-- Support for python ``uuid`` module [jensens]
+- Support for python ``uuid`` module
+  [jensens]
 
-- more generic ``basex`` base class and special ``basej`` class. [jensens]
+- more generic ``basex`` base class and special ``basej`` class.
+  [jensens]
 
 
 1.0
