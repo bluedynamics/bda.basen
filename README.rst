@@ -42,6 +42,20 @@ With this a chance to get 20 chars for a uuid is high::
     >>> term = basej(uuid.uuid4())
 
 
+Source Code and Contributions
+=============================
+
+If you want to help with the development (improvement, update, bug-fixing, ...) of ``bda.basen`` this is a great idea!
+Submit issues or pull requests!
+
+The code is located at `github <https://github.com/bluedynamics/bda.basen>`_.
+
+Maintainer is Jens Klein, Robert Niederreiter and the BlueDynamics Alliance developer team.
+We appreciate any contribution and if a release is needed to be done on pypi,
+please just contact one of us `dev@bluedynamics dot com <mailto:dev@bluedynamics.com>`_
+
+Code is licensed under GPL v2.
+
 
 Changes
 =======
@@ -51,7 +65,8 @@ Changes
 
 - Support for python ``uuid`` module [jensens]
 
-- more generic ``basex`` base class and special ``basej`` class with
+- more generic ``basex`` base class and special ``basej`` class. [jensens]
+
 
 1.0
 ---
