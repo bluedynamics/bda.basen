@@ -1,7 +1,7 @@
 History
 =======
 
-1.2 (unreleased)
+1.2 (2019-09-09)
 ----------------
 
 - Support for Python 3
