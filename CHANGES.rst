@@ -4,7 +4,8 @@ History
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Support for Python 3
+  [jensens]
 
 
 1.1 (2016-05-25)

@@ -14,6 +14,6 @@ def int2str(number, ref):
     res = []
     while number > 0:
         res.append(ref[number % len(ref)])
-        number /= len(ref)
+        number //= len(ref)
     res.reverse()
     return "".join(res)

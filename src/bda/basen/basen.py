@@ -2,7 +2,6 @@
 from bda.basen.convert import str2int
 from bda.basen.convert import int2str
 
-import types
 import uuid
 
 
@@ -11,7 +10,7 @@ class basen(object):
     ref = None
 
     def __init__(self, term):
-        if type(term) in types.StringTypes:
+        if isinstance(term, str):
             self._str = term
             self._int = str2int(term, self.ref)
             return
@@ -28,19 +27,22 @@ class basen(object):
         return self._int
 
     def __repr__(self):
-        return '%i %s' % (int(self), str(self))
+        return "%i %s" % (int(self), str(self))
 
 
 class base62(basen):
 
-    ref = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    ref = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
 
 # BBB
 basen = base62
 
 # avoid backslash and single-/doulequotes, other ascii
-jref = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' \
-       '!@#$%^&*()-_=+[]{};:,./<>?/~ '
+jref = (
+    "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    "!@#$%^&*()-_=+[]{};:,./<>?/~ "
+)
 
 
 class basej(basen):
